@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]> <html lang="en" class="no-js old-ie" style=""> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js non-ie" style=""> <!--<![endif]-->
+<head>
+  <script>
+      var b = document.documentElement;
+      b.className = b.className.replace('no-js', 'js');
+      b.setAttribute("data-useragent", navigator.userAgent);
+      b.setAttribute("data-platform", navigator.platform);
+  </script>
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <meta property="og:type" content="website"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1e083e1800","applicationID":"13119952","transactionName":"c1pdRBALVVUDRR5EXFdbRkARS1haEl5HVkFV","queueTime":0,"applicationTime":179,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <script src="https://d1lggihq2bt4jo.cloudfront.net/assets/scripts/modernizr.min-da65a6872dcf580912aeba456f271dd299b2f3b779dbbef154538a799690d793.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/gem/apple-touch-icon-57x57.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/gem/apple-touch-icon-60x60.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/gem/apple-touch-icon-72x72.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/gem/apple-touch-icon-76x76.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/gem/apple-touch-icon-114x114.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/gem/apple-touch-icon-120x120.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/gem/apple-touch-icon-144x144.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/gem/apple-touch-icon-152x152.png?v=QEErb6NjaR">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/gem/apple-touch-icon-180x180.png?v=QEErb6NjaR">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/gem/favicon-32x32.png?v=QEErb6NjaR" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/gem/favicon-194x194.png?v=QEErb6NjaR" sizes="194x194">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/gem/favicon-96x96.png?v=QEErb6NjaR" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/gem/android-chrome-192x192.png?v=QEErb6NjaR" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/gem/favicon-16x16.png?v=QEErb6NjaR" sizes="16x16">
+  <link rel="manifest" href="/assets/img/favicons/gem/manifest.json?v=QEErb6NjaR">
+  <link rel="mask-icon" href="/assets/img/favicons/gem/safari-pinned-tab.svg?v=QEErb6NjaR" color="#00a55e">
+  <link rel="shortcut icon" href="/assets/img/favicons/gem/favicon.ico?v=QEErb6NjaR">
+  <meta name="msapplication-TileColor" content="#fafafa">
+  <meta name="msapplication-TileImage" content="/assets/img/favicons/gem/mstile-144x144.png?v=QEErb6NjaR">
+  <meta name="msapplication-config" content="/assets/img/favicons/gem/browserconfig.xml?v=QEErb6NjaR">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XC42zJRm8etcMWciHFBIxqM4tbTc0twz0/r3MUW7QT4kHh84R43XWlPv1+AiFNi5hASiAvxT7kYqeQDaDBG44Q==" />
+  <link rel="stylesheet" media="screen" href="https://d1lggihq2bt4jo.cloudfront.net/assets/theme/theme_godaddy-2be1fba96b86332e6ac97080d92c86ac18b431450c4238774f2a664b97277a72.css" />
+<link rel="stylesheet" media="screen" href="https://d1lggihq2bt4jo.cloudfront.net/assets/self_service-d27589a602a93fcab97746274f0624d9edf85fa3387b5024610f7d0f12f10f2c.css" />
+  <title>GoDaddy</title>
+  
+</head>
+<body class="mimi_webform_bg ema ui_light" style="background-color: transparent;">
+<div class="mimi_webform_container" style='width:400px; max-width: 95%;'>
+  <div class="mimi_webform with_bg">
+    <section >
+      <div class="mimi_webform_header mimi_container_logo no_webform_theme_logo ui_light" style='background-color:#EFEFEF;'>
+        <h1>click therapies</h1>
+      </div>
+      <div class="mimi_webform_header mimi_container_logo has_webform_theme_logo" style='background-color:#EFEFEF;display:none;'>
+        <img src=''>
+      </div>
+    </section>
+    <div class="inner">
+      <form>
+  <fieldset>
+    <div class="mimi_field last">
+    <p>Thank you for confirming!</p>
+    </div>
+  </fieldset>
+</form>
+
+    </div>
+    <div class="mimi_webform_footer">
+          <a href="https://gem.godaddy.com" title="GoDaddy Email Marketing." class="mimi_webform_powered_by
+      ui_light      ">Powered by<br/><em>GoDaddy Email Marketing</em>&reg;</a>
+    </div>
+  </div>
+</div>
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/vendor/jquery-23a79485ab5898a608db617cd7ab074b08527a7982cc35b447e48324f3047315.js"></script>
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/gsap-a3bf0fa9ae2338fd47dd6620ce4b373876f914db3f3af2dc416279ab1a0d8e69.js"></script>
+<script>var STATES = {
+  'US': [["Alabama","AL"],["Alaska","AK"],["Arizona","AZ"],["Arkansas","AR"],["California","CA"],["Colorado","CO"],["Connecticut","CT"],["Delaware","DE"],["District Of Columbia","DC"],["Florida","FL"],["Georgia","GA"],["Hawaii","HI"],["Idaho","ID"],["Illinois","IL"],["Indiana","IN"],["Iowa","IA"],["Kansas","KS"],["Kentucky","KY"],["Louisiana","LA"],["Maine","ME"],["Maryland","MD"],["Massachusetts","MA"],["Michigan","MI"],["Minnesota","MN"],["Mississippi","MS"],["Missouri","MO"],["Montana","MT"],["Nebraska","NE"],["Nevada","NV"],["New Hampshire","NH"],["New Jersey","NJ"],["New Mexico","NM"],["New York","NY"],["North Carolina","NC"],["North Dakota","ND"],["Ohio","OH"],["Oklahoma","OK"],["Oregon","OR"],["Pennsylvania","PA"],["Rhode Island","RI"],["South Carolina","SC"],["South Dakota","SD"],["Tennessee","TN"],["Texas","TX"],["Utah","UT"],["Vermont","VT"],["Virginia","VA"],["Washington","WA"],["West Virginia","WV"],["Wisconsin","WI"],["Wyoming","WY"],["Armed Forces (AA)","AA"],["Armed Forces (AE)","AE"],["Armed Forces (AP)","AP"],["American Samoa","AS"],["Guam","GU"],["Micronesia","FM"],["Marshall Islands","MH"],["Northern Mariana Islands","MP"],["Palau","PW"],["Puerto Rico","PR"],["US Minor Outlying Islands","UM"],["US Virgin Islands","VI"]],
+  'CA': [["Alberta","AB"],["British Columbia","BC"],["Manitoba","MB"],["New Brunswick","NB"],["Newfoundland and Labrador","NL"],["Northwest Territories","NT"],["Nova Scotia","NS"],["Nunavut","NU"],["Ontario","ON"],["Prince Edward Island","PE"],["Quebec","QC"],["Saskatchewan","SK"],["Yukon","YT"]],
+  'AU': ["Australian Capital Territory","New South Wales","Northern Territory","Queensland","South Australia","Tasmania","Victoria","Western Australia"],
+  'ZA': ["Eastern Cape","Free State","Gauteng","Kwazulu-Natal","Mpumalanga","Northern Cape","Limpopo","North West Province","Western Cape"]
+};
+
+var COUNTRY_CHANGES = {
+  'default': {
+    'span[data-field=state] label + span > input': { type: 'text' },
+    'span[data-field=state] label + span > button': 'hide'
+  },
+  'AU': {
+    'span[data-field=state] label': { label: 'Province' },
+    'span[data-field=zipcode] label': { label: 'Zip' },
+    'span[data-field=state] label + span > input': { type: 'hidden' },
+    'span[data-field=state] label + span > button': 'show',
+    'span[data-field=state] label + span': { dropdown: STATES['AU'], noSelection: "Choose..." }
+  },
+  'US': {
+    'span[data-field=state] label': { label: 'State' },
+    'span[data-field=zipcode] label': { label: 'Zip' },
+    'span[data-field=state] label + span > input': { type: 'hidden' },
+    'span[data-field=state] label + span > button': 'show',
+    'span[data-field=state] label + span': { dropdown: STATES['US'], noSelection: "Choose..." }
+  },
+  'CA': {
+    'span[data-field=state] label': { label: 'Province' },
+    'span[data-field=zipcode] label': { label: 'Zip' },
+    'span[data-field=state] label + span > input': { type: 'hidden' },
+    'span[data-field=state] label + span > button': 'show',
+    'span[data-field=state] label + span': { dropdown: STATES['CA'], noSelection: "Choose..." }
+  },
+  'GB': {
+    'span[data-field=state]': 'hide',
+    'span[data-field=zipcode] > label': { label: 'Postal code' }
+  },
+  'IL': {
+    'span[data-field=state]': 'hide',
+    'span[data-field=zipcode] > label': { label: 'Postal code' }
+  },
+  'ZA': {
+    'span[data-field=state] label': { label: 'Province' },
+    'span[data-field=zipcode] label': { label: 'Postal code' },
+    'span[data-field=state] label + span > input': { type: 'hidden' },
+    'span[data-field=state] label + span > button': 'show',
+    'span[data-field=state] label + span': { dropdown: STATES['ZA'], noSelection: "Choose..." }
+  }
+};
+</script>
+
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/i18n-base-04ce2aff32112ea663e4d2436f5987c4f3a037a9100c4df5ef635986ad147596.js"></script>
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/i18n/en-gd-76b3f88ee14394e34a6447b1bfafe280d18625c64f1b3b5ce865ceb568f657ec.js"></script>
+
+<script>
+  I18n.defaultLocale = "en";
+  I18n.locale = "en-gd";
+</script>
+
+<script>
+    
+</script>
+</body>
+</html>
